@@ -8,40 +8,40 @@ What this project is trying to implement is a shooting game that can be played b
 
 ## Keyboard input manual
 
-![Alt text](p1.png)
+![Alt text](./readmeimg/p1.png)
 
 ***
 
 ## Screenshots for each screen with brief description
 
-![Alt text](p2.png)
+![Alt text](./readmeimg/p2.png)
 
 There are two players, and they can move and attack each other.
 
-![Alt text](p3.png)
+![Alt text](./readmeimg/p3.png)
 
 Each player can move left and right.
 
-![Alt text](p4.png)
+![Alt text](./readmeimg/p4.png)
 
 The basic attack of each player is to blow a bomb.
 
-![Alt text](p5.png)
+![Alt text](./readmeimg/p5.png)
 
 When hit by a bomb, the player's life value decreases.
 
 Each player has a mana, and when the mana is all full, the skill can be used.
 If you use the skill, the mana gradually decreases, and when the mana becomes zero, the skill is unactivated. The skills of the two players are different.
 
-![Alt text](p6.png)
+![Alt text](./readmeimg/p6.png)
 
 The player on the top has skill to fly three bombs in the event of an attack.
 
-![Alt text](p7.png)
+![Alt text](./readmeimg/p7.png)
 
 The player on the bottom has skill to speed up movement and attack.
 
-![Alt text](p8.png)
+![Alt text](./readmeimg/p8.png)
 
 When a player's life value reaches zero, the opponent wins and the game ends.
 
@@ -77,7 +77,7 @@ public boolean collision(int x, int y, int w, int h) {
 Collision check is implemented as above.
 pos_x is my x coordinate, x is the x coordinate of the counterpart, and w is the width of the counterpart.
 
-![Alt text](p9.png)
+![Alt text](./readmeimg/p9.png)
 
 If the x-coordinates do not overlap, they must be shown as above, so that they are expressed in code x+w < pos_x || pos_x + width <x.
 If the x-coordinates do not overlap or the y-coordinates do not overlap, the object does not overlap, or a collision occurs.
@@ -182,7 +182,7 @@ If the key is pressed, move the character.
 
 ### Class structure
 
-![Alt text](p10.png)
+![Alt text](./readmeimg/p10.png)
 
 Most basically, there is a BattleUnit class. This class has x-coordinates, y-coordinates, width, and height, which are common information of all objects appearing in the game.
 
@@ -222,9 +222,9 @@ if (info.player1.life == 0) {
 ```
 After the game, the game record is saved as a file.
 
-![Alt text](p11.png)
+![Alt text](./readmeimg/p11.png)
 
-![Alt text](p12.png)
+![Alt text](./readmeimg/p12.png)
 
 ***
 
